@@ -1,18 +1,95 @@
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <title>
-   DeepMolecule App
-  </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
- <script src="https://cdn.tailwindcss.com"></script></head>
- <body class="bg-blue-50">
-  <div class="container mx-auto px-4 py-8">
-   <div class="text-center mb-12">
-    <h1 class="text-3xl font-bold text-blue-700">
-     An artificial intelligence cloud-based iMoleQ app to assess the toxicity of chemicals
-    </h1>
-   </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>iMoleQ App</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styling */
+        .image-container {
+            position: relative;
+        }
+
+        .small-photo {
+            position: absolute;
+            top: -20px;
+            left: -10px; /* Adjust the left position */
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .large-text {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        /* Style for the new buttons */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: transparent; /* No background color */
+            color: #000; /* Black text color */
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            border: none; /* Remove button border */
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Light background color on hover */
+        }
+
+        .button img {
+            width: 120px; /* Increase the width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Bold text for the four buttons */
+        .button:nth-child(n+2):nth-child(-n+5) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-50">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Button container -->
+        <div class="button-container">
+            <!-- Replacing the first button with cevr.png -->
+            <a href="#cevr" class="button">
+                <img src="cevr.png" alt="Cevr Button">
+            </a>
+            <!-- Other buttons with bold text -->
+            <a href="#home" class="button">Home</a>
+            <a href="#team" class="button">Our Team</a>
+            <a href="#news" class="button">News</a>
+            <a href="#contact" class="button">Get in Touch</a>
+        </div>
+
+        <div class="text-center mb-12">
+            <h1>
+                <div class="inline-block bg-blue-200 p-20 rounded-lg shadow-md flex items-end image-container">
+                    <span class="large-text">iMoleQ</span>
+                    <span class="text-lg pl-4">
+                        Artificial Intelligent cloud-based app to assess the chemicals
+                    </span>
+                </div>
+            </h1>
+        </div>
+   <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+            <!-- Light block -->
+            
+
+
    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Endpoint Section -->
     <div class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
@@ -72,7 +149,4 @@
    </div>
   </div>
   <!-- Icons: you can replace these placeholders with real icons -->
-  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js">
-  </script>
- 
-</body></html>
+  <script src="https://kit.fontawesome
