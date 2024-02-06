@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Molecular Property Predictor</title>
+  <style>
+    /* CSS styles go here */
+  </style>
+</head>
+<body>
+  <h1>Molecular Property Predictor</h1>
+
+  <form id="prediction-form">
+    <label for="input-smiles">Enter SMILES string:</label>
+    <input type="text" id="input-smiles" required>
+    <button type="submit">Predict</button>
+  </form>
+
+  <p id="prediction-result"></p>
+
+  <script>
+    // JavaScript code goes here
+    // You can use a machine learning library like TensorFlow.js or scikit-learn.js for the prediction
+
+    // Example function to perform a prediction using a mock model
+    function predictMolecularProperty(smiles) {
+      // Mock implementation - replace with your own prediction code
+      const prediction = Math.random(); // Replace this with your actual prediction logic
+
+      return prediction;
+    }
+
+    // Handle form submission
+    const form = document.getElementById('prediction-form');
+    const result = document.getElementById('prediction-result');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const inputSmiles = document.getElementById('input-smiles').value;
+
+      // Call the prediction function
+      const prediction = predictMolecularProperty(inputSmiles);
+
+      // Display the prediction result
+      result.textContent = `The predicted property is: ${prediction}`;
+    });
+  </script>
+</body>
+</html>

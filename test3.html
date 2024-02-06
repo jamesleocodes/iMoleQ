@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lipophilicity Prediction</title>
+    <!-- Include Ketcher styles -->
+    <link rel="stylesheet" type="text/css" href="path_to_ketcher/dist/ketcher.min.css" />
+    <style>
+        /* Your styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lipophilicity Prediction</h1>
+        
+        <!-- Place for Ketcher component -->
+        <div id="ketcherContainer" style="height: 400px; min-width: 400px;"></div>
+
+        <form id="predictionForm">
+            <div class="form-group">
+                <button type="button" id="predictButton">Predict</button>
+            </div>
+        </form>
+        
+        <div id="predictionResult" class="result" style="display: none;">
+            <!-- Prediction result will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Include Ketcher script -->
+    <script src="path_to_ketcher/dist/ketcher.min.js"></script>
+    <script>
+        let ketcher;
+        if (window.ketcher) {
+            ketcher = window.ketcher;
+        } else {
+            console.error('Ketcher is not found');
+        }
+
+        document.getElementById('predictButton').addEventListener('click', async function() {
+            if (ketcher) {
+                const molString = await ketcher.getMolfile();
+                console.log('Predicting lipophilicity for:', molString);
+                // Now you would send molString to the server for prediction
+                // For demonstration, just show a fake result
+                var resultElement = document.getElementById('predictionResult');
+                resultElement.textContent = 'Predicted lipophilicity: ' + (Math.random() * 5).toFixed(2);
+                resultElement.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
