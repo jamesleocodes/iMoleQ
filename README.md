@@ -4,6 +4,6 @@ iMoleQ is a Cloud-based web application designed to predict molecular properties
 
 The frontend development of iMoleQ has been completed, and you can access it at www.imoleq.com. Currently, we are in the process of integrating the backend with the API and server-side components. Please stay tuned for more updates as we continue to enhance and improve the iMoleQ application.
 
-If you find this repository helpful, we would appreciate your support by giving it a star. jjii
+If you find this repository helpful, we would appreciate your support by giving it a star. 
 
 <img width="697" alt="Screenshot 2023-03-19 at 11 29 44 PM" src="https://github.com/jamesleocodes/iMoleQ/blob/master/presentation.png">
